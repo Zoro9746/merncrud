@@ -4,7 +4,7 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-const API = process.env.REACT_APP_API_URL;
+const API = process.env.REACT_APP_URL  || "http://localhost:5000"
 
 function App() {
   const [people, setPeople] = useState([]);
